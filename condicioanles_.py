@@ -52,3 +52,25 @@ if inc > dec:
     print("No le solicito comprar el auto")
 else:
     print("Si usted quiere podria comprar el auto tranquilamente!")
+    
+#ej6
+pcT=int(input("¿Cuantas computadores desea llevar?: "))
+valorPc = 11000
+
+if (pcT >= 1 and pcT <= 4):
+    cuenta = (pcT * valorPc)
+    descuento = (cuenta * 0.10)
+    totalC = (cuenta - descuento)
+    print("Su total a pagar es: {}".format(totalC)) 
+elif (pcT >= 5 and pcT <= 9):
+    cuenta = (pcT * valorPc)
+    descuento = (cuenta * 0.20)
+    totalC = (cuenta - descuento)
+    print("Su total a pagar es: {}".format(totalC)) 
+elif (pcT > 10):
+    cuenta = (pcT * valorPc)
+    descuento = (cuenta * 0.40)
+    totalC = (cuenta - descuento)
+    print("Su total a pagar es: {}".format(totalC)) 
+else:
+   print("Digite una cantidad de computadores valida!")
