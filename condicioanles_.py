@@ -16,8 +16,17 @@ else:
 #ej2
 numP = int(input("Digite un numero al alzar para obtener su promoción!: "))
 if (numP <= 0):
-    print("Un numero!")x
+    print("Un numero!")
 elif (numP <= 73):
     print("Usted tendra un descuento del 15%!")
 else:
     print("Usted tendra un descuento del 20%!")
+    
+#ej3
+montoF = int(input("Digite el monto para la fianza: "))
+if (montoF <= 0):
+    print("No se puede determinar la cuota que debe pagar!")
+elif (montoF <= 49999):
+    print("El cliente debera pagar la cuota por un valor de: ",(montoF * 0.03))
+else:
+    print("El cliente debera pagar la cuota por un valor de: ",(montoF * 0.02))
