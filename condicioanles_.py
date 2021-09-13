@@ -74,3 +74,25 @@ elif (pcT > 10):
     print("Su total a pagar es: {}".format(totalC)) 
 else:
    print("Digite una cantidad de computadores valida!")
+   
+#ej7
+precioA=int(input("Digite el precio del aparato: "))
+marca=(input("¿Que marca es su aparato?: "))
+
+if (precioA >= 1 and precioA <= 1999):
+    iva = (precioA * 0.16)
+    totalP = (precioA + iva)
+    print("Su total a pagar es: {}".format(totalP)) 
+elif (precioA >= 2000 and marca == "nosy" or marca == "Nosy" or marca == "NOSY"):
+    iva = (precioA * 0.16)
+    descuento = (precioA * 0.10)
+    descuentoN = (precioA * 0.05)
+    totalP = (precioA + iva - descuento - descuentoN)
+    print("Su total a pagar es: {}".format(totalP)) 
+elif (precioA >= 2000):
+    iva = (precioA * 0.16)
+    descuento = (precioA * 0.10)
+    totalP = (precioA + iva - descuento)
+    print("Su total a pagar es: {}".format(totalP)) 
+else:
+   print("Digite una cantidad de computadores valida!")
