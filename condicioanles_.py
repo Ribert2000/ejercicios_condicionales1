@@ -116,3 +116,17 @@ elif (montoT <= 499999):
     print("La inversion de la empresa sera de: {}".format(inversionP)) 
     print("El valor del credito sera de: {}".format(credito)) 
     print("Los intereses tendran un total de: {}".format(intereses)) 
+    
+#ej9
+num1=int(input("Digite el primer numero: "))
+num2=int(input("Digite el segundo numero: "))
+
+if (num1 == num2):
+    mult = (num1 * num2) 
+    print(f"Como el primer numero es igual al segundo, se multiplican, el resultado es: {mult}") 
+elif (num1 > num2):
+    rest = (num1 - num2)
+    print(f"Como el primer numero es mayor al segundo, se restan, el resultado es: {rest}") 
+elif (num1 < num2):
+    suma = (num1  + num2)
+    print(f"Como el primer numero es menor al segundo, se suman, el resultado es: {suma}")
