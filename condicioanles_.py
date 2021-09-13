@@ -96,3 +96,23 @@ elif (precioA >= 2000):
     print("Su total a pagar es: {}".format(totalP)) 
 else:
    print("Digite una cantidad de computadores valida!")
+   
+#ej8
+montoT=int(input("Digite el monto total de la compra: "))
+
+if (montoT >= 500000):
+    inversionP = (montoT * 0.55)
+    prestamo = (montoT * 0.30)
+    credito = (montoT * 0.15)
+    intereses = (credito * 0.20)
+    print("La inversion de la empresa sera de: {}".format(inversionP)) 
+    print("El prestamo solicitado sera de: {}".format(prestamo)) 
+    print("El valor del credito sera de: {}".format(credito)) 
+    print("Los intereses tendran un total de: {}".format(intereses)) 
+elif (montoT <= 499999):
+    inversionP = (montoT * 0.70)
+    credito = (montoT * 0.30)
+    intereses = (credito * 0.20)
+    print("La inversion de la empresa sera de: {}".format(inversionP)) 
+    print("El valor del credito sera de: {}".format(credito)) 
+    print("Los intereses tendran un total de: {}".format(intereses)) 
