@@ -30,3 +30,13 @@ elif (montoF <= 49999):
     print("El cliente debera pagar la cuota por un valor de: ",(montoF * 0.03))
 else:
     print("El cliente debera pagar la cuota por un valor de: ",(montoF * 0.02))
+    
+#ej4
+puntosF = int(input("Digite cuantos puntos cree que tiene su fabrica: "))
+if (puntosF <= 0):
+    print("Digite un valor valida!")
+elif (puntosF <= 169):
+    print("Su fabrica no tendra sancion ni multa.")
+else:
+    print("Usted sera sancionado con parar su produccion por una semana y una multa del 50% cuando no se detiene la produccion")
+
