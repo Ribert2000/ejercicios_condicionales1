@@ -40,3 +40,15 @@ elif (puntosF <= 169):
 else:
     print("Usted sera sancionado con parar su produccion por una semana y una multa del 50% cuando no se detiene la produccion")
 
+#ej5
+precio = int(input("Digite el valor del carro que desea comprar: "))
+incTerreno = int(input("Digite el incremento anual del terreno en porcentaje: "))
+bajonAuto = int(input("Digite la devaluacion del auto anualmente  en porcentaje: "))
+
+inc = (((precio * incTerreno)/100)*3)/2
+dec = ((precio * bajonAuto)/100)*3
+
+if inc > dec:
+    print("No le solicito comprar el auto")
+else:
+    print("Si usted quiere podria comprar el auto tranquilamente!")
